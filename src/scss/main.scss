@@ -2,7 +2,7 @@
 
 @import "settings/fonts";
 @import "settings/colors";
+@import "partials/partials";
+@import "utils/functions";
 
-body {
-  font-family: $font-base;
-}
+@import "components/header";

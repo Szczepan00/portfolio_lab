@@ -1,0 +1,97 @@
+.header {
+  height: 100vh;
+  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-repeat: no-repeat;
+  background-position-x: toRem(-400);
+
+  .container {
+    max-width: toRem(1616);
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: toRem(683);
+    margin-top: toRem(37);
+    //background-color: #ddd;
+
+    &--upper a {
+      display: inline-block;
+      font-size: toRem(14);
+      padding: toRem(9) toRem(10);
+      color: $color-gray;
+
+      &:nth-last-child(1) {
+        border: toRem(0.75) solid $color-yellow;
+      }
+    }
+
+    &--bottom ul {
+      width: toRem(683);
+      margin-top: toRem(17);
+      display: flex;
+      justify-content: space-between;
+
+      & li {
+        font-size: toRem(18);
+        padding: toRem(9) toRem(20);
+        color: $color-dark-gray;
+
+        &:nth-child(1) {
+          border: toRem(0.75) solid $color-dark-gray;
+        }
+      }
+    }
+  }
+
+  &__info {
+    width: toRem(674);
+    margin-right:  toRem(133);
+    margin-top: toRem(220);
+    //background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+
+
+    &--title {
+      font-size: toRem(38);
+      letter-spacing: toRem(-0.76);
+      line-height: toRem(55);
+      color: $color-dark-gray;
+      text-align: center;
+
+      &::after {
+        content: url("./../../assets/Decoration.svg");
+        width: toRem(253);
+        height: toRem(33);
+      }
+    }
+
+    &--buttons {
+      margin-top: toRem(65);
+      display: flex;
+      justify-content: space-between;
+      font-size: toRem(36);
+
+      & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: toRem(310);
+        height: toRem(120);
+        text-align: center;
+        text-transform: uppercase;
+        //padding: toRem(13) toRem(93);
+        color: $color-dark-gray;
+        border: toRem(0.75) solid $color-dark-gray;
+        font-weight: 300;
+      }
+    }
+  }
+}
