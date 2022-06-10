@@ -1,0 +1,35 @@
+.info {
+  background-image: url('./../../assets/3 Columns Background.png');
+  max-height: toRem(384);
+  display: flex;
+  justify-content: space-between;
+  padding: toRem(46) toRem(163) toRem(86) toRem(163);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & h2 {
+      font-size: toRem(90);
+      color: $color-olive;
+      font-weight: 300;
+      line-height: toRem(122);
+    }
+
+    & span {
+      text-transform: uppercase;
+      font-size: toRem(18);
+      color: $color-dark-gray;
+      line-height: toRem(30);
+    }
+
+    & p {
+      margin-top: toRem(28);
+      font-size: toRem(16);
+      line-height: toRem(18);
+      font-weight: 300;
+    }
+  }
+}
