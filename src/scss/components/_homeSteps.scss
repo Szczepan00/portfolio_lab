@@ -1,0 +1,97 @@
+.steps {
+  margin-top: toRem(55);
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h3 {
+      font-size: toRem(38);
+      line-height: toRem(55);
+      color: $color-dark-gray;
+      margin-bottom: toRem(25);
+    }
+
+    &::after{
+      content: url("./../../assets/Decoration.svg");
+      margin-bottom: toRem(34);
+    }
+  }
+
+  &__items {
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    padding: toRem(73) toRem(414) toRem(80) toRem(414);
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &:nth-child(1)::before{
+        content: url("./../../assets/Icon-1.svg");
+      }
+
+      &:nth-child(2)::before{
+        content: url("./../../assets/Icon-2.svg");
+      }
+
+      &:nth-child(3)::before{
+        content: url("./../../assets/Icon-3.svg");
+      }
+
+      &:nth-child(4)::before{
+        content: url("./../../assets/Icon-4.svg");
+      }
+
+      & span:nth-child(1) {
+        font-size: toRem(18);
+        line-height: toRem(24);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $color-dark-gray;
+        margin-top: toRem(8);
+        font-weight: normal;
+
+        &::after {
+          content: "";
+          width: toRem(70);
+          border-top: 1px solid #707070;
+          margin: toRem(8.5) 0;
+        }
+
+        & span:nth-child(2) {
+          font-size: toRem(16);
+          line-height: toRem(10);
+          color: $color-dark-gray;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-top: toRem(35);
+    margin-bottom: toRem(80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+      display: inline-block;
+      border: 1px solid $color-dark-gray;
+      font-size: toRem(36);
+      line-height: toRem(45);
+      color: $color-dark-gray;
+      text-transform: uppercase;
+      padding: toRem(13) toRem(93);
+      font-weight: 300;
+
+    }
+  }
+}

@@ -26,8 +26,8 @@ export function HomeHeader() {
                         <h1>Zacznij pomagać! <br/>Oddaj niechciane rzeczy w zaufane ręce</h1>
                     </div>
                     <div className="header__info--buttons">
-                        <a href="#">Oddaj <br/> rzeczy</a>
-                        <a href="#">Zorganizuj zbiórkę</a>
+                        <a href="">Oddaj <br/> rzeczy</a>
+                        <a href="">Zorganizuj zbiórkę</a>
                     </div>
                 </section>
             </div>
