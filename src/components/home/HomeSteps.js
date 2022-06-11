@@ -32,6 +32,7 @@ export function HomeSteps() {
             <div className="steps__button">
                 <a href="#">Oddaj <br /> rzeczy</a>
             </div>
+
         </section>
     );
 }
