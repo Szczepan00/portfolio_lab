@@ -1,0 +1,80 @@
+.whoWeHelp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: toRem(70) toRem(278) toRem(80);
+
+  &__title {
+    font-size: toRem(38);
+    letter-spacing: toRem(-0.76);
+    line-height: toRem(55);
+    color: $color-dark-gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &::after {
+      content: url("./../../assets/Decoration.svg");
+      margin-top: toRem(25);
+    }
+  }
+
+  &__organizations {
+    margin-top: toRem(50);
+    display: flex;
+    width: toRem(750);
+    justify-content: space-between;
+
+    & li {
+      width: toRem(208);
+      height: toRem(79);
+      border: toRem(0.75) solid $color-dark-gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: toRem(24);
+      color: $color-dark-gray;
+    }
+  }
+
+  &__description {
+    margin-top: toRem(70);
+    font-size: toRem(22);
+    text-align: center;
+    color: $color-dark-gray;
+  }
+
+  &__entries {
+    width: 100%;
+    margin-top: toRem(66);
+    //font-family: $font-alt;
+
+    &--entry {
+      //height: toRem(81);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //margin-bottom: toRem(31);
+      padding: toRem(34) 0 toRem(31);
+
+      & aside h4{
+        font-size: toRem(26);
+        line-height: toRem(31);
+        color: $color-dark-gray;
+        font-weight: 300;
+      }
+
+      & span{
+        font-size: toRem(18);
+        line-height: toRem(22);
+        color: $color-dark-gray;
+        font-weight: 300;
+      }
+
+      &:nth-child(2)::before, &:nth-child(2)::after {
+        content: '';
+        border-top: 1px solid $color-dark-gray;
+      }
+    }
+  }
+}
