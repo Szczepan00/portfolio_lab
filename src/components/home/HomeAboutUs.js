@@ -1,9 +1,8 @@
-import React from 'react';
 import signature from './../../assets/Signature.svg'
 
 export function HomeAboutUs() {
     return (
-        <section className="aboutUs">
+        <section className="aboutUs" id="aboutUs">
             <aside className="aboutUs__description">
                 <h3 className="aboutUs__description--title">O nas</h3>
                 <span>Nori grape silver beet broccoli kombu beet <br/>

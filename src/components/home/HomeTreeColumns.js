@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function HomeTreeColumns() {
     return (
         <section className="info">

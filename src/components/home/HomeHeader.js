@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export function HomeHeader() {
     return (
@@ -13,7 +13,14 @@ export function HomeHeader() {
                     <div className="header__nav--bottom">
                         <ul>
                             <li>Start</li>
-                            <li>O co chodzi?</li>
+                            <li>
+                                <HashLink
+                                    to="/#aboutUs"
+                                    smooth
+                                >
+                                    O co chodzi?
+                                </HashLink>
+                            </li>
                             <li>O nas</li>
                             <li>Fundacja i organizacje</li>
                             <li>Kontakt</li>

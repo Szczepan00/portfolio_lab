@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function HomeSteps() {
     return (
         <section className="steps">
