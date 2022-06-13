@@ -71,9 +71,37 @@
         font-weight: 300;
       }
 
-      &:nth-child(2)::before, &:nth-child(2)::after {
-        content: '';
-        border-top: 1px solid $color-dark-gray;
+      //&:nth-child(2)::before, &:nth-child(2)::after {
+      //  content: '';
+      //  border-top: 1px solid $color-dark-gray;
+      //}
+
+      &:nth-child(2) {
+        border-top: 1px solid #707070;
+        border-bottom: 1px solid #707070;
+      }
+    }
+  }
+
+  &__pages {
+    margin-top: toRem(60);
+
+    & ol {
+      display: flex;
+      justify-content: space-between;
+      width: toRem(155);
+
+      & li {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: toRem(40);
+        height: toRem(50);
+        border: 1px solid #707070;
+        font-size: toRem(18);
+        line-height: toRem(24);
+        color: $color-dark-gray;
       }
     }
   }

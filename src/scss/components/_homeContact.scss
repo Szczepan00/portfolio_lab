@@ -1,0 +1,118 @@
+.contact {
+  background-image: url('./../../assets/Background-Contact-Form.jpg');
+  //box-shadow: #FFFFFFC9;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #FFFFFFC9;
+  }
+
+  &__info {
+    z-index: 1;
+    width: toRem(528);
+    margin-top: toRem(200);
+    margin-right: toRem(142);
+
+    & h5 {
+      font-size: toRem(38);
+      line-height: toRem(55);
+      letter-spacing: toRem(-0.76);
+      color: $color-dark-gray;
+      text-align: center;
+      margin-bottom: toRem(25);
+
+      &::after {
+        content: url("./../../assets/Decoration.svg");
+      }
+    }
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      margin-top: toRem(70);
+
+      & .inputs {
+        display: flex;
+
+        & .inputName, & .inputEmail {
+         font-size: toRem(16);
+         font-weight: 600;
+          width: 100%;
+
+         & input {
+           margin-top: toRem(12);
+           border: none;
+           border-bottom: 1px solid #707070;
+           width: 95%;
+           font-size: toRem(18);
+           line-height: toRem(24);
+         }
+        }
+
+        & + label {
+          margin-top: toRem(40);
+          font-size: toRem(16);
+          font-weight: 600;
+        }
+      }
+
+      & textarea {
+        margin-top: toRem(12);
+        border: none;
+        border-bottom: 1px solid #707070;
+        width: 95%;
+        background-color: transparent;
+        font-family: $font-base;
+        font-size: toRem(18);
+        line-height: toRem(24);
+        width: 100%;
+      }
+
+      & button {
+        width: toRem(150);
+        height: toRem(50);
+        border: toRem(0.75) solid $color-dark-gray;
+        background-color: transparent;
+        font-size: toRem(18);
+        line-height: toRem(32);
+        font-weight: 300;
+        margin-top: toRem(40);
+        align-self: end;
+      }
+    }
+  }
+
+  & footer {
+    z-index: 1;
+    margin-top: toRem(273);
+    width: 100%;
+    text-align: center;
+    margin-bottom: toRem(22);
+    position: relative;
+
+    & span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    & .icons {
+      text-align: right;
+      margin-right: toRem(142);
+
+      & a:nth-child(1) {
+        margin-right: toRem(20);
+      }
+    }
+  }
+}

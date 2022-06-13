@@ -39,7 +39,7 @@ export function HomeWhoWeHelp() {
                     <span>ubrania, jedzenie, ciepłe koce</span>
                 </div>
             </div>
-            <nav>
+            <nav className="whoWeHelp__pages">
                 <ol>
                     <li>1</li>
                     <li>2</li>
