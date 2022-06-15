@@ -1,6 +1,8 @@
+import {Link} from "react-router-dom";
+
 export function HomeSteps() {
     return (
-        <section className="steps">
+        <section className="steps" id="steps">
             <div className="steps__title">
                 <h3>Wystarczą 4 proste kroki</h3>
             </div>
@@ -28,7 +30,7 @@ export function HomeSteps() {
             </div>
 
             <div className="steps__button">
-                <a href="#">Oddaj <br /> rzeczy</a>
+                <Link to="logowanie">Oddaj <br/>rzeczy</Link>
             </div>
 
         </section>

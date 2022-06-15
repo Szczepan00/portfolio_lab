@@ -3,7 +3,7 @@ import instagram from './../../assets/Instagram.svg'
 
 export function HomeContact() {
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <div className="contact__info">
                 <h5>Skontaktuj się z nami</h5>
                 <form action="">

@@ -1,6 +1,13 @@
+import {useState} from "react";
+import { organizations } from './organizations';
+
 export function HomeWhoWeHelp() {
+
+    const [organizations, setOrganizations] = useState('fundations');
+    const [data, setData] = useState();
+
     return (
-        <section className="whoWeHelp">
+        <section className="whoWeHelp" id="fundations">
             <h3 className="whoWeHelp__title">Komu pomagamy?</h3>
             <ul className="whoWeHelp__organizations">
                 <li>Fundacjom</li>

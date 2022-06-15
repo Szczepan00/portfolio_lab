@@ -1,0 +1,79 @@
+.login {
+  max-width: toRem(1616);
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+
+  &__form {
+    align-self: center;
+    margin-top: toRem(123);
+
+    &--title {
+      font-size: toRem(40);
+      line-height: toRem(55);
+      letter-spacing: toRem(-0.8);
+      color: $color-dark-gray;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      
+      &::after {
+        content: url("./../../assets/Decoration.svg");
+      }
+    }
+
+    & form {
+      margin-top: toRem(60);
+      display: flex;
+      flex-direction: column;
+      background-color: $color-white;
+      padding: toRem(40) toRem(67.25);
+
+      & label {
+        font-size: toRem(16);
+        font-weight: 600;
+        color: $color-dark-gray;
+      }
+
+      & label[for="password"] {
+        margin-top: toRem(31);
+      }
+
+      & input {
+        width: toRem(250);
+        margin-top: toRem(12);
+        border: none;
+        border-bottom: 1px solid #707070;
+        width: 95%;
+        font-size: toRem(18);
+        line-height: toRem(24);
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__buttons {
+    align-self: center;
+    margin-top: toRem(40);
+    width: toRem(518);
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+      display: inline-block;
+      width: toRem(117);
+      height: toRem(50);
+      font-size: toRem(18);
+      color: $color-dark-gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:nth-child(2) {
+        border: toRem(0.75) solid $color-dark-gray;
+      }
+    }
+  }
+}

@@ -37,14 +37,18 @@
       display: flex;
       justify-content: space-between;
 
-      & li {
+      & li a {
+        display: inline-block;
         font-size: toRem(18);
         padding: toRem(9) toRem(20);
         color: $color-dark-gray;
 
-        &:nth-child(1) {
+        &:active{
           border: toRem(0.75) solid $color-dark-gray;
         }
+        //&:nth-child(1) {
+        //  border: toRem(0.75) solid $color-dark-gray;
+        //}
       }
     }
   }
