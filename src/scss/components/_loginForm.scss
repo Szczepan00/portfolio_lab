@@ -52,6 +52,13 @@
         line-height: toRem(24);
         background-color: transparent;
       }
+
+      & p {
+        color: #ff1e0a;
+        font-size: toRem(12);
+        font-weight: 700;
+        margin-top: toRem(10);
+      }
     }
   }
 
