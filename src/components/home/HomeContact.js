@@ -28,8 +28,8 @@ export function HomeContact() {
             <footer>
                 <span>Copyright by Coders Lab</span>
                 <div className="icons">
-                    <a href=""><img src={facebook} alt=""/></a>
-                    <a href=""><img src={instagram} alt=""/></a>
+                    <a href="https://pl-pl.facebook.com/"><img src={facebook} alt=""/></a>
+                    <a href="https://www.instagram.com/"><img src={instagram} alt=""/></a>
                 </div>
             </footer>
         </section>

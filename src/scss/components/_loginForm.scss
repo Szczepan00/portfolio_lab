@@ -31,13 +31,14 @@
       background-color: $color-white;
       padding: toRem(40) toRem(67.25);
 
+      & label:nth-child(1) {
+        margin-top: 0;
+      }
+
       & label {
         font-size: toRem(16);
         font-weight: 600;
         color: $color-dark-gray;
-      }
-
-      & label[for="password"] {
         margin-top: toRem(31);
       }
 
