@@ -1,31 +1,22 @@
-import { Navigation } from "./Navigation";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Navigation } from "./Navigation";
 
-export function LoginForm(props) {
-
+export function LoginForm() {
     const initialValues = { email: "", password: "" };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
-    const [isSubmit, setIsSubmit] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormValues({ ...formValues, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleClick = (e) => {
         e.preventDefault();
         setFormErrors(validate(formValues));
-        setIsSubmit(true);
     };
 
-    useEffect(() => {
-        console.log(formErrors);
-        if (Object.keys(formErrors).length === 0 && isSubmit) {
-            console.log(formValues);
-        }
-    }, [formErrors]);
     const validate = (values) => {
         const errors = {};
 
@@ -67,7 +58,7 @@ export function LoginForm(props) {
             </div>
             <div className="login__buttons">
                 <Link to="/rejestracja">Załóź konto</Link>
-                <Link to="/logowanie" onClick={handleSubmit}>Zaloguj się</Link>
+                <Link to="/logowanie" onClick={handleClick}>Zaloguj się</Link>
             </div>
         </div>
     );

@@ -1,33 +1,24 @@
-import { Navigation } from "./Navigation";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Navigation } from "./Navigation";
 
-export function RegisterForm(props) {
+export function RegisterForm() {
     const initialValues = { email: "", password: "", repeatPassword: "", };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
-    const [isSubmit, setIsSubmit] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormValues({ ...formValues, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleClick = (e) => {
         e.preventDefault();
         setFormErrors(validate(formValues));
-        setIsSubmit(true);
     };
 
-    useEffect(() => {
-        console.log(formErrors);
-        if (Object.keys(formErrors).length === 0 && isSubmit) {
-            console.log(formValues);
-        }
-    }, [formErrors]);
     const validate = (values) => {
         const errors = {};
-
         if (!values.email.includes("@")) {
             errors.email = "Podany email jest nieprawidłowy!";
         }
@@ -36,7 +27,8 @@ export function RegisterForm(props) {
         }
         if (values.repeatPassword.length < 6) {
             errors.repeatPassword = "Podane hasło jest niepoprawne!";
-        }else if (values.repeatPassword !== values.password) {
+        }
+        else if (values.repeatPassword !== values.password) {
             errors.repeatPassword = "Podane hasło jest niepoprawne!";
         }
         return errors;
@@ -81,7 +73,7 @@ export function RegisterForm(props) {
             </div>
             <div className="login__buttons">
                 <Link to="/logowanie">Zaloguj się</Link>
-                <Link to="/rejestracja" onClick={handleSubmit}>Załóź konto</Link>
+                <Link to="/rejestracja" onClick={handleClick}>Załóź konto</Link>
             </div>
         </div>
     );
