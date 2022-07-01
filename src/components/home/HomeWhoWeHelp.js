@@ -1,11 +1,8 @@
-import {useState} from "react";
-import { organizations } from './organizations';
+import  data  from './organizations';
 
 export function HomeWhoWeHelp() {
 
-    const [organizations, setOrganizations] = useState('fundations');
-    const [data, setData] = useState();
-
+    // console.log(data);
     return (
         <section className="whoWeHelp" id="fundations">
             <h3 className="whoWeHelp__title">Komu pomagamy?</h3>
@@ -15,9 +12,7 @@ export function HomeWhoWeHelp() {
                 <li>Lokalnym <br/>zbiórkom</li>
             </ul>
             <span className="whoWeHelp__description">
-                W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z <br/>
-                którymi współpracujemy. Możesz sprawdzić czym się zajmują, <br/>
-                komu pomagają i czego potrzebują.
+               {data[0].description}
             </span>
             <div className="whoWeHelp__entries">
                 <div className="whoWeHelp__entries--entry">
